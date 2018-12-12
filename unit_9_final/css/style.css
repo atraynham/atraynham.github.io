@@ -1,0 +1,472 @@
+
+@import url("https://use.typekit.net/kjr0keh.css");
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,600,700,900');
+
+* {
+	margin: 0px;
+	padding: 0px;
+  box-sizing:border-box;
+}
+
+body {
+  color: #222;
+  font-size: 16px;
+  text-align: center;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  margin: 0em auto;
+}
+
+article {
+  margin: 0em auto;
+}
+
+footer {
+  background-color: #222;
+  padding: 1.5em 0 3em 0;
+  color: white;
+}
+
+a {
+	text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom: 1px solid #FFBE3E;
+  padding-bottom: 2px;
+}
+
+nav {
+  padding: 0 0 1.5em 0;
+  margin: auto;
+  text-align: center;
+  background: #ebebeb;
+}
+
+nav a:link {
+  margin: 0 0.7em;
+  padding:  0.2em 0.7em;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0.1em;
+  display: inline-block;
+}
+
+nav a:visited {
+  color: #222;
+}
+
+nav a:hover {
+  background: #FFBE3E;
+}
+
+nav a:active{
+  color:#222;
+}
+
+img {
+  width: 100%;
+}
+
+h1, h2, h4 {
+  font-family: acme-gothic-compressed, sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #FFBE3E;
+  font-size: 4.5em;
+  font-weight: 300;
+  letter-spacing: .0125em;
+  line-height: 95%;
+  padding: .4em;
+}
+
+h2 {
+  font-size: 2.8em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 100%;
+  margin-bottom: 0.3em;
+}
+
+h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 105%;
+  letter-spacing: 0.02em;
+  font-weight: 700;
+}
+
+h4 {
+	font-size: 1.7em;
+  font-weight: 400;
+  font-style: normal;
+	letter-spacing: 0.05em;
+	line-height: 110%;
+  color: #FFBE3E;
+  margin: auto;
+}
+
+h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 1.05em;
+  color: #222;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0 0 0.2em 0;
+}
+
+
+p {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05em;
+  font-weight: 400;
+	line-height: 130%;
+}
+
+p2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1em;
+  line-height: 150%;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #222;
+  letter-spacing: 0.05em;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: 75%;
+  margin: auto;
+  max-width: 60em;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  content:" ";
+  display: block;
+  clear: both;
+}
+
+.hero-image {
+  background-image: url("images/RBC_Header_BKD.jpg");
+  background-color: #222;
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  padding: 2em 2em 5em 2em;
+}
+
+.hero-image div {
+  text-align: center;
+  vertical-align: top;
+  position: relative;
+  padding: 0 5%;
+}
+
+.cover-image {
+  height: 18em;
+  object-fit: cover;
+  background-color: #285393;
+}
+
+.beer-info {
+  width: 100%;
+}
+
+.beer-info img {
+  width: 100%;
+  padding-right: 0.7em;
+  margin: .5em 0;
+  min-width: 12em;
+  max-width: 15em;
+}
+
+.beer-info h3 {
+  padding-left: 0.1em;
+}
+
+.beer-info p, h5 {
+  text-align: left;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+    'glass . .'
+    'glass beer brief'
+    'glass beer specs'
+    'glass . .';
+  grid-gap: 0;
+  grid-template-columns: 30% 9.6em auto;
+  grid-template-rows: auto auto auto 17%;
+  width: 100%;
+}
+
+.grid-container > div {
+  padding: 3%;
+}
+
+.item1 {
+  grid-area: beer;
+  border-top: 2px solid #222;
+  border-right: 2px solid #222;
+  border-bottom: 2px solid #222;
+  display: flex;
+  align-items: center;
+}
+
+.item2 {
+  grid-area: brief;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+.item3 {
+  grid-area: specs;
+  border-bottom: 2px solid #222;
+}
+
+.item4 {
+  grid-area: glass;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 80%;
+  max-width: 320px
+}
+
+#can-bkd {
+  height: 36%;
+  background: #ebebeb;
+}
+
+#can-bkd div {
+  text-align: center;
+  padding: 0 0 0 1em;
+  margin: auto;
+}
+
+#can-bkd img {
+  margin: -5em 0 auto;
+  padding-top: 1em;
+  width: 90%;
+  max-width: 44em;
+  z-index: 1;
+}
+
+#story {
+  background-color: rgba(255,190,62,.9);
+}
+
+#tours {
+  background-color: rgba(255,126,56,.9);
+}
+
+#story, #tours {
+  padding: 2.2em 15% 2.5em;
+  margin: 3em;
+}
+
+
+@media only screen and (max-width: 960px) {
+
+  h1 {
+    font-size: 4.6em;
+    padding: .1em;
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+
+  .grid-container > div {
+  padding: 2%;
+  }
+   
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'glass .'
+      'glass beer'
+      'glass brief'
+      'glass specs'
+      'glass .';
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+  }
+
+  .item1 {
+    grid-area: beer;
+    border-top: 2px solid #222;
+    border-right: 0px;
+    border-bottom: 0px;
+    display: flex;
+    align-items: ;
+  }
+
+  .beer-info img {
+    width: 100%;
+    padding-right: 1em;
+    margin: .5em 0;
+    min-width: 10em;
+    max-width: 12em;
+  }
+
+  .cover-image {
+    height: 18em;
+    object-fit: cover;
+    padding: 0em;
+    margin: 0;
+  }
+
+#story, #tours {
+  padding: 1.8em 10% 2.1em;
+  margin: 2.5em;
+}
+
+
+@media only screen and (max-width: 690px) {
+
+  main {
+    width: 100%;
+    padding: 0.5em;
+  }
+
+  article {
+    margin: 1em auto;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+   
+  .grid-container {
+    display: grid;
+    grid-template-areas: 
+      'glass glass'
+      'beer beer'
+      'brief brief'
+      'specs specs'
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    width: 100%;
+    margin-top: 1.5em;
+  }
+  
+}
+
+@media only screen and (max-width: 525px) {
+
+  body {
+    font-size: 17px;
+  }
+
+  nav a:link {
+    display: block;
+    margin: 0em auto;
+    font-size: 1.4em;
+    margin: 0 2em;
+    padding:  0.2em 0.7em;
+  }
+
+  .wrapper {
+    width: 90%;
+  }
+
+  .beer-info {
+    width: 85%;
+    margin: 0 auto;
+  }
+   
+  .grid-container {
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .beer-info img {
+    width: 100%;
+    padding-right: 0em;
+    padding-bottom: 0.25em;
+    margin: .5em auto;
+    min-width: 10em;
+    max-width: 10em;
+  }
+
+  .beer-info p, h5, h3 {
+    text-align: center;
+    padding: 0;
+  }
+
+  .item1 {
+    grid-area: beer;
+    border-top: 2px solid #222;
+    border-right: 0px;
+    border-bottom: 0px;
+    display: block;
+    align-items: ;
+  }
+
+  .cover-image {
+    height: 10em;
+    object-fit: cover;
+  }
+
+  #story, #tours {
+    padding: 1.4em 8% 1.7em;
+    margin: 2em;
+  }
+
+}
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 3.5em;
+    padding: .1em;
+  }
+
+  #story, #tours {
+  padding: 1.4em 6% 1.7em;
+  margin: 1em;
+  }
+  
+}
+
+  @media only screen and (max-width: 326px) {
+  h1 {
+    font-size: 2.8em;
+    padding: .1em;
+  }
+
+  #story, #tours {
+    padding: 1em 6% 1.4em;
+    margin: 0.5em;
+ }
+
+}
+
